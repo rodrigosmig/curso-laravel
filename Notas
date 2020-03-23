@@ -1,0 +1,48 @@
+Executar
+php artisan serve
+
+Listar rotas
+php artisan route:list
+
+
+Criar controller
+php artisan make:controller
+
+Comando para criar um controller já com os métodos
+php artisan make:controller ClienteControlador --resource
+
+Controllers:
+app/Http/Controllers
+
+Rotas:
+routes/web.php
+
+Arquivo .env fica as variaveis de ambiente
+
+{{ asset() }} - acessa os arquivos estáticos na pasta public
+
+
+Eloquent ORM
+
+Model::all() - listar todos os registros
+Model::find(1) - consultar o registro com id "1"
+Model::find([1,2,3]) - consultar os registros com id "1", "2" e "3"
+Model::where('field', ">", "valor")->get() - busca o registro de acordo com a condição informada
+Model::whereBetween('field', [1, 4])->get() - retorna os registros do intervalo solicitado
+Model::whereBetween('field', [1, 4])->get()
+Model::whereNotIn('field', [1, 4])->get()
+Brand::where('name', 'like', '%e%')->get()
+Brand::orderBy('name')->get()
+
+
+
+
+
+
+
+
+
+
+
+
+
